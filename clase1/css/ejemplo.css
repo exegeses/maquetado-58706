@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(166, 242, 255);    
+}
+
+p{
+    background-color:rgb(115, 219, 238);
+}
+
+#destacado{
+    background-color: rgb(255, 245, 166);    
+}
+
+.enlace{
+    color: rgb(36, 118, 0);
+    text-decoration: none;
+}
