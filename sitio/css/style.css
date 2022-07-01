@@ -96,6 +96,28 @@ main {
             margin: 16px 0px;
         }
 
+    #caracteristicas{
+        width: 1100px;
+        margin: auto;
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+        #caracteristicas article{
+            width: 326px;
+            margin: 32px 0px;
+        }
+        #caracteristicas article img{
+            vertical-align: middle;
+            margin-right: 12px;
+        }
+        #caracteristicas p{
+            text-align: justify;
+            margin: 20px 20px 20px 0px;
+        }
+
+
 #bottom{
     background-color: #262626;
     height: 150px;
