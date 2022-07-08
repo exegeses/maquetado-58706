@@ -227,6 +227,11 @@ main {
         color: #fff;
     }
 
+    .cta{
+        color: #fff !important;
+        background: linear-gradient(90deg, rgba(215,143,183,1) 0%, rgba(201,185,241,1) 100%);
+    }
+
 #bottom{
     background-color: #262626;
     height: 150px;
