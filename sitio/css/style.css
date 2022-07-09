@@ -232,6 +232,49 @@ main {
         background: linear-gradient(90deg, rgba(215,143,183,1) 0%, rgba(201,185,241,1) 100%);
     }
 
+/* ## sección contacto ## */
+/* ## sección contacto ## */
+#contacto{
+    background-image: url(../imgs/bg-contacto.jpg);
+    padding-top: 64px;
+}
+    #contacto section{
+        display: flex;
+        background-color: #fff;
+        width: 1000px;
+        margin: auto;
+        border-radius: 16px;
+        padding: 60px;
+    }
+    #contacto input,
+    #contacto textarea,
+    #contacto button
+    {
+        font-family: Raleway, sans-serif;
+        background-color: #F4F4F4;
+        width: 550px;
+        padding: 16px;
+        border: none;
+        /*border: 1px solid #ccc;*/
+        box-shadow: 0px 0px 3px #999;
+        border-radius: 12px;
+        margin-bottom: 32px;
+    }
+    #contacto textarea{
+        height: 152px;
+        resize: vertical;
+    }
+    #contacto button{
+        background-color: #444;
+        color: #fff;
+        cursor: pointer;
+        transition: .3s;
+    }
+    #contacto button:hover{
+        background-color: #323232;
+    }
+
+
 #bottom{
     background-color: #262626;
     height: 150px;
