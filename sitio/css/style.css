@@ -240,12 +240,17 @@ main {
 }
     #contacto section{
         display: flex;
+        justify-content: space-between;
         background-color: #fff;
         width: 1000px;
         margin: auto;
         border-radius: 16px;
         padding: 60px;
     }
+    #contacto form{
+        width: 550px;
+    }
+    
     #contacto input,
     #contacto textarea,
     #contacto button
@@ -274,6 +279,24 @@ main {
         background-color: #323232;
     }
 
+    #contacto article{
+        background-color: #F4F4F4;
+        border-radius: 12px;
+        width: 250px;
+        height: 316px;
+        text-align: center;
+    }
+    #contacto section article img{
+        width: 72px;
+        padding: 8px;
+        border: 1px solid #323232;
+        border-radius: 100%;
+        display: inline-block;
+        margin: 20px 0 12px 0;
+    }
+    #contacto article span{
+        display: block;
+    }
 
 #bottom{
     background-color: #262626;

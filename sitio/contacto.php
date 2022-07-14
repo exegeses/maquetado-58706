@@ -1,3 +1,28 @@
+<?php
+    /* capturamos datos enviados por el form */
+    $nombre = $_POST['nombre'];
+    $email = $_POST['email'];
+    $consulta = $_POST['consulta'];
+
+    /* configuramos datos de email a enviar */
+    $destinatario = 'goku@drop.com';
+    $asunto = 'Email enviado desde mi sitio';
+    $cuerpo = '<div style="width: 500px; font-family: sans-serif; ';
+    $cuerpo .= 'border-radius: 16px; background-color: #82fae4; ';
+    $cuerpo .= 'color: #152830; font-size: 18px; padding: 24px">';
+    $cuerpo .= 'Nombre: <b>'.$nombre.'</b><br>';
+    $cuerpo .= 'Email: <b>'.$email.'</b><br>';
+    $cuerpo .= 'Consulta: <b>'.$consulta.'</b>';
+    $cuerpo .= '</div>';
+
+    ## encabezados adicionales
+    $headers = 'From: consultas@empresa.com' . "\r\n";
+    $headers .= 'Reply-To: '.$email."\r\n";
+    $headers .= "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type: text/html; charset=UTF-8" . "\r\n";
+
+    mail( $destinatario, $asunto, $cuerpo, $headers );
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -25,29 +50,16 @@
                 <a href="nosotros.html">Nosotros</a>
                 <a href="contacto.html">Contacto</a>
             </nav>
+
         </header>
-        <h1>Vías de contacto</h1>
+
     <!-- fin fondo con gradiente -->
     </div>
 
     <main id="contacto">
         <!-- contenido -->
         <section>
-            <form action="contacto.php" method="post">
-                <input placeholder="Nombre:" type="text" name="nombre">
-                <input placeholder="Email:" type="email" name="email">
-                <textarea placeholder="Consulta:" name="consulta"></textarea>
-                <button>Enviar</button>
-            </form>
-            <article>
-                <img src="imgs/smartphone.png">
-                <span>Teléfonos</span>
-                <span>+44 324 325 326</span>
-
-                <img src="imgs/email.png">
-                <span>Email</span>
-                <span>info@morningstar.co.uk</span>
-            </article>
+            Gracias <?= $nombre ?> por contactarmos.
         </section>
 
 
